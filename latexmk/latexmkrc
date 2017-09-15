@@ -1,0 +1,4 @@
+$out_dir = 'out';
+$pdf_mode = 1;
+$pdflatex = 'xelatex -interaction=nonstopmode -shell-escape %O %S';
+$pdf_previewer = 'open -a Preview %S';
