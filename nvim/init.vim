@@ -1,6 +1,7 @@
 set nocompatible
 :syntax on
 filetype off
+source ~/.config/nvim/bepo.vim
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.config/nvim/bundle/Vundle.vim
