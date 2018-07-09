@@ -11,7 +11,7 @@
 "vim.useCtrlKeys": true,
 "vim.hlsearch": true,
 // BEPO REMAP
-"vim.otherModesKeyBindingsNonRecursive":[
+"vim.normalModeKeyBindingsNonRecursive":[
     { "before": [":"], "after": ["."]},
     { "before": ["."], "after": [":"]},
     { "before": ["c"], "after": ["h"] },
@@ -36,9 +36,39 @@
     { "before": ["[", "k"], "after": ["[", "s"]},
     { "before": ["«"], "after": ["<"]},
     { "before": ["»"], "after": [">"]},
-],       
+],
+"vim.visualModeKeyBindingsNonRecursive":[
+    { "before": [":"], "after": ["."]},
+    { "before": ["."], "after": [":"]},
+    { "before": ["c"], "after": ["h"] },
+    { "before": ["t"], "after": ["j"] },
+    { "before": ["s"], "after": ["k"] },
+    { "before": ["r"], "after": ["l"] },
+    { "before": ["C"], "after": ["H"] },
+    { "before": ["T"], "after": ["J"] },
+    { "before": ["S"], "after": ["K"] },
+    { "before": ["R"], "after": ["L"] },
+    { "before": ["h"], "after": ["c"] },
+    { "before": ["j"], "after": ["t"] },
+    { "before": ["k"], "after": ["s"] },
+    { "before": ["l"], "after": ["r"] },
+    { "before": ["H"], "after": ["C"] },
+    { "before": ["J"], "after": ["T"] },
+    { "before": ["K"], "after": ["S"] },
+    { "before": ["L"], "after": ["R"] },
+    { "before": ["z", "s"], "after": ["z", "j"]},
+    { "before": ["z", "t"], "after": ["z", "k"]},
+    { "before": ["]", "k"], "after": ["]", "s"]},
+    { "before": ["[", "k"], "after": ["[", "s"]},
+    { "before": ["«"], "after": ["<"]},
+    { "before": ["»"], "after": [">"]},
+],
 "vim.insertModeKeyBindingsNonRecursive": [
     { "before": ["«"], "after": ["<"]},
     { "before": ["»"], "after": [">"]},
-]
+],
+"[python]": {
+  "editor.tabSize": 4,
+}
+// Language-specific config
 }
