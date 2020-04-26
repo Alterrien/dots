@@ -53,7 +53,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,3 +85,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export EDITOR='nvim'
+
+
+# bepo bindkeys
+bindkey -a c vi-backward-char
+bindkey -a r vi-forward-char
+bindkey -a t vi-down-line-or-history
+bindkey -a s vi-up-line-or-history
+bindkey -a $ vi-end-of-line
+bindkey -a 0 vi-digit-or-beginning-of-line
+bindkey -a h vi-change
+bindkey -a H vi-change-eol
+bindkey -a dd vi-change-whole-line
+bindkey -a l vi-replace-chars
+bindkey -a L vi-replace
+bindkey -a k vi-substitute
+
+export KEYTIMEOUT=1
