@@ -103,3 +103,7 @@ bindkey -a L vi-replace
 bindkey -a k vi-substitute
 
 export KEYTIMEOUT=1
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/a.terrien/devtools/sdkman"
+[[ -s "/home/a.terrien/devtools/sdkman/bin/sdkman-init.sh" ]] && source "/home/a.terrien/devtools/sdkman/bin/sdkman-init.sh"
